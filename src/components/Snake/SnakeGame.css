@@ -1,0 +1,68 @@
+#GameBoard {
+	position: relative;
+	margin: auto;
+	border-style: solid;
+}
+
+#GameBoard .Block {
+	position: absolute;
+}
+
+#GameBoard #GameOver {
+	text-align: center;
+	height: 100%;
+	flex-direction: column;
+	display: flex;
+	justify-content: space-around;
+}
+
+#GameBoard #Score {
+	position: relative;
+	top: 105%;
+	text-align: center;
+	font-weight: bold;
+}
+
+#GameBoard #GameOverText {
+	color: #ca0000;
+	font-weight: bold;
+	text-decoration-line: underline;
+}
+
+#GameBoard #PressSpaceText {
+	color: #2e7ecb;
+	font-weight: bold;
+}
+
+
+
+.custom-button {
+    padding: 12.5px 30px;
+	margin: 20px;
+    border: 0;
+    border-radius: 100px;
+    background-color: #2ba8fb;
+    color: #ffffff;
+    font-weight: bold;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+  
+  .custom-button:hover {
+	background-color: #6fc5ff;
+	box-shadow: 0 0 20px #6fc5ff50;
+	transform: scale(1.1);
+  }
+  
+  .custom-button:active {
+	background-color: #3d94cf;
+	transition: all 0.25s;
+	-webkit-transition: all 0.25s;
+	box-shadow: none;
+	transform: scale(0.98);
+  }
