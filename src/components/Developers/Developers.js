@@ -42,7 +42,7 @@ function Developers() {
         </div>
         <div class="card">
           <img src={VinayakPic} width="300px" alt="Developer 2" />
-          <h3 style={{ color: "black", padding: "10px" }}>Vinayak Patil</h3>
+          <a href="VINAYAK LINKED IN" style={{textDecoration:'none'}}><h3 style={{ color: "black", padding: "10px" }}>Vinayak Patil</h3></a>
         </div>
         {/* <div class="card">
           <img src="/Krishna.jpg" width="300px" alt="Developer 3" />

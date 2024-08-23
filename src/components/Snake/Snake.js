@@ -388,7 +388,8 @@ class SnakeGame extends React.Component {
             backgroundColor: "white",
             width: this.state.width,
             height: this.state.height,
-            borderWidth: this.state.width / 50,
+            border:"0px solid white"
+            // borderWidth: this.state.width / 50,
           }}
         >
           {this.state.snake.map((snakePart, index) => {
@@ -429,4 +430,60 @@ class SnakeGame extends React.Component {
   }
 }
 
-export default SnakeGame;
+export default SnakeGame; 
+
+// import React, { useState, useEffect } from 'react';
+// import Snake from 'snake-game-react';
+// import { Link } from 'react-router-dom';
+// import { Typography } from '@mui/material';
+// import './SnakeGame.css';
+
+// function App() {
+//   const [score, setScore] = useState(0);
+//   const [highScore, setHighScore] = useState(
+//     parseInt(localStorage.getItem('snakeHighScore'), 10) || 0
+//   );
+
+//   useEffect(() => {
+//     if (score > highScore) {
+//       setHighScore(score);
+//       localStorage.setItem('snakeHighScore', score);
+//     }
+//   }, [score, highScore]);
+
+//   const handleGameOver = () => {
+//     // The snake-game-react component should call this when the game is over
+//     alert('Game Over! Your score: ' + score);
+//     setScore(0); // Reset score for a new game
+//   };
+
+//   const handleScoreUpdate = (newScore) => {
+//     setScore(newScore);
+//   };
+
+//   return (
+//     <div className="snake">
+//       <Link to="/">
+//         <button className="custom-button">← Go Back</button>
+//       </Link>
+//       <Typography variant="h3" style={{ color: 'white', marginTop: '30px' }}>
+//         Snake Game
+//       </Typography>
+//       <Typography variant="h6" style={{ color: 'white', marginTop: '10px' }}>
+//         High Score: {highScore}
+//       </Typography>
+//       <Typography variant="h6" style={{ color: 'white', marginTop: '10px' }}>
+//         Current Score: {score}
+//       </Typography>
+//       <Snake
+//         color1="#248ec2"
+//         color2="#1d355e"
+//         backgroundColor="#ebebeb"
+//         onGameOver={handleGameOver}
+//         onScoreUpdate={handleScoreUpdate}
+//       />
+//     </div>
+//   );
+// }
+
+// export default App;
